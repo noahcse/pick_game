@@ -42,6 +42,11 @@ def play_pick_stone(play1, play2, total_stone, max_pick):
         else:
             print("There are now",total_stone,\
             "stones remaining.")
+        # Switch players
+        if current_player == 1:    
+            current_player=2
+        else:
+            current_player=1
             
 print("pick game: last pick player is the loser")
 play1 = input("name of player1:")
